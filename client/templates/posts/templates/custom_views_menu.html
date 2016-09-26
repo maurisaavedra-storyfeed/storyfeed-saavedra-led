@@ -1,0 +1,11 @@
+<template name="custom_views_menu">
+  <div class="view-name-title">  
+      {{_ "top"}}
+     </div> 
+</template>
+
+<template name="custom_views_menu_mobile">
+  <div class="views-menu-wrapper-3 mobile-only {{moduleClass}}">
+    {{> menuComponent menuName="view_mobile" menuLabel=menuLabel menuItems=menuItems menuType="list"}}
+  </div>
+</template>

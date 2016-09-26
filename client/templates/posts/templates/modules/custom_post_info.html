@@ -1,0 +1,13 @@
+<template name="custom_post_info">
+
+    {{#if postedAt}}<span class="post-time">{{timeAgo postedAt}}</span>{{/if}}
+
+<div class="{{moduleClass}} post-admin" aria-live="off">
+
+     <div class="post-admin-stats"> 
+     <span title="{{_ 'clicks'}}">{{{icon "clicks"}}} {{clickCount}} <span class="sr-only">{{_ "clicks"}}</span></span>
+     <span title="{{_ 'views'}}">{{{icon "views"}}} {{viewCount}} <span class="sr-only">{{_ "views"}}</span></span>
+     </div>
+
+</div>
+</template>

@@ -1,0 +1,14 @@
+<template name="custom_notification_post_approved">
+  <p>
+    {{_ "congrats"}}
+    {{_ "your_post"}} 
+    {{_ "has_been_approved"}} 
+    <br/>
+    {{_ "share_with_friends_so_help_you_vote"}}<br/>
+     <div class="custom-share-options">
+      <a class="custom-share-option-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{postUrl}}" target="_blank">{{{icon "facebook"}}}</a>
+      <a class="custom-share-option-twitter" href="//twitter.com/intent/tweet?text={{_ "please_help_me_with_a_vote"}} {{postUrl}}&{{viaTwitter}}" target="_blank">{{{icon "twitter"}}}</a>
+    </div>
+    <a href="{{postUrl}}" class="action-link">{{postTitle}}</a>
+  </p>
+</template>

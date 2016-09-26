@@ -1,0 +1,13 @@
+<template name="custom_post_submit">
+  <div class="form-page post-submit">
+       <h2 class="custom-info-banner">
+         {{_ "remember_to_categorize_your_story_in_the_most_specific_and_correct_way_possible"}}<br/>
+         {{_ "country_city_source_and_topic_of_the_story"}}<br/>
+         <br/>
+         {{_ "stories_correctly_categorized_get_more_upvotes"}}
+       </h2>
+    <div class="grid grid-module">
+      {{> quickForm collection="Posts" id="submitPostForm" template="bootstrap3-horizontal" input-col-class="controls" type="method" meteormethod="submitPost" fields=postFields}}
+    </div>
+  </div>
+</template>

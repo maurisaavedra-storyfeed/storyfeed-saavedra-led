@@ -1,0 +1,24 @@
+<template name="custom_category_title">
+   {{#if categories}}
+    <div class="category-heading-wrapper post-list-title">
+      {{#each categories}}
+        <div class="category-heading">
+          {{#if description}}
+            <h2 class="main-category-title">{{title}}</h2>
+            <h3 class="category-description">{{description}}</h3>
+          {{/if}}
+          {{#if image}}
+            <img class="category-image" src="{{image}}" alt=""/>
+          {{/if}}  
+          {{#if facebookPage}}
+            <div align="right" class="category-social-link">
+             <a style="font-weight: normal !important;" href="https://www.facebook.com/{{facebookPage}}" target="_blank">{{{icon "facebook"}}}/{{facebookPage}}</a> I
+             <a style="font-weight: normal !important;" href="//twitter.com/{{twitterPage}}" target="_blank">{{{icon "twitter"}}}/{{twitterPage}}</a>
+            </div> 
+          {{/if}}
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+</template>
+

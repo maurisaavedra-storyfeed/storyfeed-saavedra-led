@@ -1,0 +1,58 @@
+ <head>
+  
+  <title>StoryFeed - Democracy for Cities and Countries</title>
+
+  <meta name="description" content="StoryFeed is an app that lets you share your stories with your entire city, country and the world. And vote for what's most important.">
+  <meta name="keywords" content="social, news, app, new">
+  <meta name="fragment" content="!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+<!--//////////////// GEOLOCATION //////////////// -->
+
+<!-- change the variables in /packages/telescope-tags/lib/client/templates/autoform_category.js 
+
+  <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=3ad5809aef226b92" type="text/javascript"></script>
+
+<!--
+  <script language="Javascript" src="//gd.geobytes.com/gd?after=-1&amp;variables=GeobytesCity,GeobytesCapital,GeobytesCountry" type="text/javascript"></script>
+-->
+
+<!-- Redirect to City and Country 
+<script language="Javascript">
+window.document.location.hash = "?cat[0]=" + geoplugin_countryName();
+</script> 
+
+<!-- working redirection to city, region and country 
+
+<script language="Javascript">
+if(typeof(geoplugin_region())=="undefined"
+    ||typeof(geoplugin_countryName())=="undefined")
+{
+   // If something gone wrong with the variables set them to default value.
+} 
+// Visitors from citygo here
+if(geoplugin_region()!="unknown")
+{
+   window.document.location.hash = "?cat[0]=" + geoplugin_region();
+}
+// Visitors from country go here
+else if(geoplugin_region()=="unknown")
+{  
+   window.document.location.hash = "?cat[0]=" + geoplugin_countryName();
+}
+</script>
+
+////////////// END GEOLOCATION //////////////// -->
+
+<!-- ////////////// CODE FOR POP-UP CAPABILITY ///////////////// 
+<script>
+// When the user clicks on <div>, open the popup
+function popupfunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+</script>
+
+<!-- ////////////// END POP-UP CODE ///////////////// -->
+
+</head>

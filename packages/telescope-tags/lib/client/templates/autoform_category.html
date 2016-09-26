@@ -1,0 +1,37 @@
+<template name="afCategory_bootstrap3">
+  <div class="category-input" {{this.atts}}>
+    {{_ "pick_suggested"}} 
+    {{> afCategory_suggested_location_geoplugin}}
+    {{_ "pick_topic"}}
+    {{> afCategory_topic}}
+    {{_ "pick_other_location"}}
+    {{> afCategory_location}}
+  </div>
+</template>
+
+<template name="afCategory_suggested_location_geoplugin">
+    {{> menuComponent menuName="categories" menuItems=menuItems menuType="collapsible" expandLevel=expandLevel}}
+</template>
+
+<template name="afCategory_topic">
+    {{> menuComponent menuName="categories" menuItems=menuItems menuType="collapsible"}}
+</template>
+
+<template name="afCategory_location">
+    {{> menuComponent menuName="categories" menuItems=menuItems menuType="collapsible"}}
+</template>
+
+
+<template name="category_input_item">
+  <div class="menu-item-label category-input-item" id="{{item._id}}">
+    <label>
+      <input class="category-checkbox" type="checkbox" value="{{item._id}}" {{atts}} /> {{{getItemLabel}}}
+    </label>
+  </div>
+  {{#if childMenuItems}}
+    <a class="menu-items-toggle js-menu-toggle" href="#">
+      <span class="menu-icon-expand">{{> menuIconExpand}}</span>
+      <span class="menu-icon-collapse">{{> menuIconCollapse}}</span>
+    </a>
+  {{/if}}
+</template>

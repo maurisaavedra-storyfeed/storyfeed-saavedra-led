@@ -1,0 +1,15 @@
+<template name="suggested_location_menu">
+ <div class="categories-side-bar-0 categories-menu-wrapper menu-component categories-menu menu-collapsible menu-has-items menu-expanded js-menu-container {{moduleClass}}">
+      {{#if hasCategories}}
+      {{> menuComponent menuName="categories" itemTemplate="categories_menu_item" menuItems=menuItems expandLevel=expandLevel}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="suggested_location_menu_mobile">
+ <div class="categories-menu-wrapper menu-component categories-menu menu-collapsible menu-has-items menu-expanded js-menu-container {{moduleClass}}">
+      {{#if hasCategories}}
+      {{> menuComponent menuName="categories" menuLabel=menuLabel itemTemplate="categories_menu_item" menuItems=menuItems menuType=menuType expandLevel=expandLevel}}
+    {{/if}}
+  </div>
+</template>
