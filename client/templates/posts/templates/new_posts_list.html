@@ -1,8 +1,10 @@
 <template name="new_posts_list">
   <div class="posts-side-bar">
      <div class="view-name-title">  
-      {{_ "new"}}
+       {{_ "new"}}
      </div> 
-      {{> posts_list_controller arguments}}
+     <div class="new-posts-list">  
+       {{> posts_list_controller arguments}}
+     </div> 
   </div>
 </template>

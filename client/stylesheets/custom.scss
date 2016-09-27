@@ -240,7 +240,7 @@ form, .accounts-dialog{
 }
 
 .post-title {
-	 font-size: 18px !important;
+	 font-size: 24px !important;
 	 color: black;
    font-weight: 300 !important;
 }
@@ -507,9 +507,9 @@ h4 {
 
 
 .content-wrapper{
-  max-width: 63% !important;
+  max-width: 60% !important;
   padding-top: 0px;
-  margin-right: 33% !important;
+  margin-right: 35% !important;
   margin-bottom: 0px;
   margin-left: auto;
 }
@@ -632,9 +632,9 @@ h4 {
   position: fixed;
   background: white;
   border-radius: 3px;
-  width: 27% !important;
+  width: 29% !important;
   margin-top: 0px;
-  margin-left: 70% !important;
+  margin-left: 66% !important;
   z-index: 1;
 }
 @media screen and (max-width: 600px) {
@@ -660,24 +660,36 @@ h4 {
 
 .posts-side-bar {
   margin-top: 0px;
-  padding: 6px;
+  padding: 0px;
   position: relative;
   width: 100%;
   overflow-y: scroll !important;
-  max-height: 700px !important;
+  max-height: 650px !important;
   border-bottom: 1px solid #e1e1e1 !important;
   background: #F7F7F7 !important;
 }
 
 
 .view-name-title {
-  background: white;
-  border-radius: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  border-bottom: 1px solid #ccc;
+  display: block;
   padding: 10px;
-  font-size: 20px;
   background: #F7F7F7 !important;
 }
 
+.new-posts-list {
+  .post-title {
+    font-size: 18px !important;
+  }
+  .post {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
 
 
 // -------------- EMBED CODE ----------------- //
